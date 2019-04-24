@@ -44,8 +44,6 @@ Connection: keep-alive
         data = extract_data(response.text)
         for item in data:
             print(item)
-        with open("weixin_history.html", "w", encoding="utf-8") as f:
-            f.write(response.text)
 
 def extract_data(html_content):
     """
